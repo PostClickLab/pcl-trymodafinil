@@ -116,7 +116,12 @@ export const footer = {
     { icon: BadgeCheck, label: 'Licensed U.S. providers' },
     { icon: Lock, label: 'HIPAA-compliant & secure' },
   ] as IconText[],
-  legitScript: 'LEGITSCRIPT SEAL',
+  legitScript: {
+    href: 'https://www.legitscript.com/websites/?checker_keywords=trymodafinil.com',
+    img: 'https://static.legitscript.com/seals/52426190.png',
+    title: 'Verify LegitScript Approval for www.trymodafinil.com',
+    alt: 'Verify Approval for www.trymodafinil.com',
+  },
   disclaimer:
     'Modafinil is a prescription medication and a Schedule IV controlled substance. It is only available after an online consultation with a licensed U.S. healthcare provider, who determines whether a prescription is appropriate. Prescriptions are not guaranteed. Medication is dispensed by licensed U.S. pharmacies. Modafinil is FDA-approved to improve wakefulness in adults with excessive sleepiness associated with narcolepsy, obstructive sleep apnea or shift work disorder; any other use is off-label at the discretion of your provider. Individual results may vary. This website does not provide medical advice; always talk to a healthcare provider about your health. These statements about L-theanine have not been evaluated by the Food and Drug Administration.',
   copyright: '© 2026 TryModafinil. All rights reserved.',

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import { ShieldCheck } from 'lucide-react'
 import { footer } from '../content'
 import { EmailForm } from './blocks'
 import { Logo } from './Logo'
@@ -50,10 +49,15 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <span className="inline-flex items-center gap-2 self-start rounded-lg border border-white/20 px-3.5 py-2 text-[11px] font-bold tracking-[0.18em] text-white/85 lg:self-auto">
-            <ShieldCheck className="size-4 text-sky" />
-            {footer.legitScript}
-          </span>
+          <a
+            href={footer.legitScript.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={footer.legitScript.title}
+            className="shrink-0 self-start lg:self-auto"
+          >
+            <img src={footer.legitScript.img} alt={footer.legitScript.alt} width={73} height={79} loading="lazy" />
+          </a>
         </div>
 
         <p className="mt-10 text-xs leading-relaxed text-white/45">{footer.disclaimer}</p>
