@@ -118,7 +118,7 @@ export const footer = {
   ] as IconText[],
   legitScript: {
     href: 'https://www.legitscript.com/websites/?checker_keywords=trymodafinil.com',
-    img: 'https://static.legitscript.com/seals/52426190.png',
+    img: '/images/legitscript-seal.png',
     title: 'Verify LegitScript Approval for www.trymodafinil.com',
     alt: 'Verify Approval for www.trymodafinil.com',
   },
