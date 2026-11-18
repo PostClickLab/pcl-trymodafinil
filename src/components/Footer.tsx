@@ -49,15 +49,49 @@ export function Footer() {
               </li>
             ))}
           </ul>
-          <a
-            href={footer.legitScript.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            title={footer.legitScript.title}
-            className="shrink-0 self-start lg:self-auto"
-          >
-            <img src={footer.legitScript.img} alt={footer.legitScript.alt} width={73} height={79} loading="lazy" />
-          </a>
+          <div className="shrink-0">
+            <div className="flex items-center gap-6 sm:gap-8">
+              <a
+                href={footer.legitScript.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={footer.legitScript.title}
+                className="shrink-0"
+              >
+                <img
+                  src={footer.legitScript.img}
+                  alt={footer.legitScript.alt}
+                  width={292}
+                  height={316}
+                  loading="lazy"
+                  className="h-auto w-24 sm:w-28"
+                />
+              </a>
+              <div className="flex min-w-0 flex-col items-center gap-3">
+                <img
+                  src={footer.cliniciansChoice.logo}
+                  alt={footer.cliniciansChoice.logoAlt}
+                  width={800}
+                  height={117}
+                  loading="lazy"
+                  className="h-auto w-48 brightness-0 invert sm:w-60"
+                />
+                <img
+                  src={footer.cliniciansChoice.avatars}
+                  alt={footer.cliniciansChoice.avatarsAlt}
+                  width={700}
+                  height={234}
+                  loading="lazy"
+                  className="h-auto w-36 sm:w-44"
+                />
+              </div>
+            </div>
+            <ul className="mt-5 space-y-1 text-sm text-white/75">
+              {footer.rxNotes.map((note) => (
+                <li key={note}>{note}</li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <p className="mt-10 text-xs leading-relaxed text-white/45">{footer.disclaimer}</p>
