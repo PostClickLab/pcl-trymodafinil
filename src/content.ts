@@ -44,7 +44,7 @@ export const announcements = [
   'Review within 24h',
   'Free discreet shipping on every order',
   'Full refund if you are not prescribed',
-  'Licensed U.S. providers · Review within 24h',
+  'Licensed U.S. providers',
 ]
 
 export const nav: Array<{ label: string; href: string; badge?: string }> = [
